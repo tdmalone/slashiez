@@ -1,0 +1,16 @@
+{
+    "defaultFunctionName": "pocket",
+    "description": "Pocket Slashie",
+    "name": "HTTP GET",
+    "language": "PHP",
+    "trigger": "HttpTrigger",
+    "category": [
+        "$temp_category_experimental"
+    ],
+    "categoryStyle": "http",
+    "enabledInTryMode": true,
+    "userPrompt": [
+        "authLevel",
+        "connection"
+    ]
+}
