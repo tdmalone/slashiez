@@ -43,4 +43,17 @@ $main_menu = (
 
 );
 
-fwrite( STDOUT, $main_menu );
+$response = [
+
+  'isRaw'  => true,
+  'status' => 200,
+  'body'   => $main_menu,
+
+  'headers' => [
+    'Content-Type' => 'text/html',
+  ],
+
+];
+
+// Output response.
+file_put_contents( getenv( 'res' ), json_encode( $response ) );
