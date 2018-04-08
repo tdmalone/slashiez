@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /slack.
+ * Slashiez function for /slack.
  * Provides Slack related tools, including searching through the entire conversation archives.
  *
  * @author Tim Malone <tdmalone@gmail.com>

@@ -1,7 +1,7 @@
 /**
- * Main Terraform configuration for Slashies.
+ * Main Terraform configuration for Slashiez.
  *
- * Because Slashies was originally written in PHP, it utilises Azure functions which do support
+ * Because Slashiez was originally written in PHP, it utilises Azure functions which do support
  * PHP. Terraform state is stored in an AWS S3 bucket.
  *
  * @author Tim Malone <tdmalone@gmail.com>
@@ -32,34 +32,17 @@ provider "aws" {
 
 /**
  * Configure Terraform backend for storing state.
- * Some resources utilised here are managed by tdmalone/timfrastructure.
- *
- * When running `terraform plan` for the first time, you'll want to comment out the `terraform`
- * object below and allow the default, local backend to be used at first, so that the neccessary
- * resource(s) can be created.
+ * Resources utilised here are managed by tdmalone/timfrastructure.
  *
  * @see https://www.terraform.io/docs/backends/types/s3.html
  * @see https://github.com/tdmalone/timfrastructure/blob/master/config.tf
- * @see https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html
  */
 terraform {
   backend "s3" {
     bucket         = "timfrastructure"
-    key            = "slashies-tfstate"
+    key            = "slashiez-tfstate"
     encrypt        = true
-    dynamodb_table = "slashies-tfstate"
-  }
-}
-
-resource "aws_dynamodb_table" "tfstate" {
-  name           = "slashies-tfstate"
-  hash_key       = "LockID"
-  read_capacity  = 1
-  write_capacity = 1
-
-  attribute {
-    name = "LockID"
-    type = "S"
+    dynamodb_table = "timfrastructure"
   }
 }
 
@@ -80,7 +63,7 @@ resource "azurerm_resource_group" "main" {
  * @see https://www.terraform.io/docs/providers/azurerm/r/storage_account.html
  */
 resource "azurerm_storage_account" "main" {
-  name                     = "slashies"
+  name                     = "slashiez"
   resource_group_name      = "${azurerm_resource_group.main.name}"
   location                 = "${azurerm_resource_group.main.location}"
   account_tier             = "Standard"
@@ -106,12 +89,12 @@ resource "azurerm_app_service_plan" "main" {
 }
 
 /**
- * Create a function app for Slashies!
+ * Create a function app for Slashiez!
  *
  * @see https://www.terraform.io/docs/providers/azurerm/r/function_app.html
  */
-resource "azurerm_function_app" "slashies" {
-  name                      = "slashies"
+resource "azurerm_function_app" "slashiez" {
+  name                      = "slashiez"
   location                  = "${azurerm_resource_group.main.location}"
   resource_group_name       = "${azurerm_resource_group.main.name}"
   app_service_plan_id       = "${azurerm_app_service_plan.main.id}"

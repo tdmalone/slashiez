@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /dropbox.
+ * Slashiez function for /dropbox.
  * Perform minor maintenance tasks on your Dropbox account.
  *
  * @author Tim Malone <tdmalone@gmail.com>

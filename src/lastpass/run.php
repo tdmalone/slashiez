@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /lastpass.
+ * Slashiez function for /lastpass.
  * Tools to manage passwords stored in LastPass.
  *
  * @author Tim Malone <tdmalone@gmail.com>

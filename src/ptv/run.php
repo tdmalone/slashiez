@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /ptv.
+ * Slashiez function for /ptv.
  * Get disruption info as well as the next 5 trains, trams or buses from any stop.
  *
  * @author Tim Malone <tdmalone@gmail.com>

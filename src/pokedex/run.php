@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /pokedex.
+ * Slashiez function for /pokedex.
  * Retrieve information on hundreds of Pokemon.
  *
  * @author Tim Malone <tdmalone@gmail.com>

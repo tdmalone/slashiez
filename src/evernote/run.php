@@ -1,6 +1,6 @@
 <?php
 /**
- * Slashies function for /evernote.
+ * Slashiez function for /evernote.
  * Manage and search through your Evernote notes.
  *
  * @author Tim Malone <tdmalone@gmail.com>
