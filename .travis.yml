@@ -1,0 +1,63 @@
+language: php
+php: 7.2
+
+env:
+  global:
+
+    - AWS_ACCESS_KEY_ID=AKIAIIBLAA35SCYO5L2Q
+    - AWS_DEFAULT_REGION=ap-southeast-2
+    - ARM_SUBSCRIPTION_ID=d21f70bc-fafc-4e50-8cee-91c88b24d045
+    - ARM_CLIENT_ID=a38bb9d4-b6fc-4d1e-b7fb-606c2d8fd900
+    - ARM_TENANT_ID=6bd1ad24-6f8a-4c08-be8e-7ce396332c0c
+
+    # AWS_SECRET_ACCESS_KEY
+    - secret: JsN6+Z6KjgXM9qgAedU5amJBG/aa1I7/txcRPZXvrhUZINRLaoSLJUOcL3m/5Z7lWcrLOTs0semFCxca2OoFog6LA/eQ1t6+C1y3us3fFp6F2U92XwL2jo5vnC3xVteTUHSudWI11np49Aa0E2ZgiP2GGJCB0Oh4kIBwwCc3QM5AeNseel6EJs+oN8sq+mOWH79fY5VUFtNxfJwZAofz4XM30eV0+F4U9NxJcw5T7kGPITAZguqgS/aXCRffo4KZPaxiVOH2LqAuZEjSexBSMMgE11mlAjQ5eko0x3gGSIQwa9Luzv/xzyGCbNoqTJ3gPeO8bZb4Tn0iPUH8Dw0DJn7J+4Coi4wgnbJvskOQ0zWhxmD6nX/n0YeAKkbP8QOilqzqSTHNfloMiGeX9HljjEoS5Rf+nKqBpaX3ErbvNVAwVqq0iE0OvpNOMo/8WMB9X5Dz62rIPQWnzKPi5MC7Yz9FbIn9BtFWY7P+SOSR1SE1s0mVqQGV0qWSHSgwZbAWVUaF5ziOqXK4OFmEYoVusIDbxdIRtK/WiocqfqAAJHjTXSvVi2upACu0xC0Gm4B4RGQ5reMtrqevrQYJi+slHuOGyddfpQNLNvAK809DUHKbQpO4y4lx4UwEiyefY2vsYLX2tz/DvKSPn+wXRSWhIeLhbiTMplMP2CI3Wo3gNpU=
+
+    # ARM_CLIENT_SECRET
+    - secret: slQvSrz8DXNqmP7zt3UCnQj8XmxfHHxNk1Hc3IBEOlGBWj83PxrC2zY8FtaUBII6Di5vewKshYIjFauS6m7Hnrr21QkWGHadMrqOCe0k8lTboNnQHgFDF6ZW9w3IzryBlwNFAHL6QUdiQgUY8WiThJ7vU3fmLZTCPN/xSxcl+f3Ow1Nu93zFdcPPgiE7u0hVsGBhTAlFwYqnQDq2hGWGS5wQFbnUGgkjvxNQnzWev9ziWOlv5WWNJ5Hsa6Ed+Ksb/FvFskVU2B/2aJBhDO7xhmQL/k4gQtUvlDox7xfuInywwMKkQJWocOFNGbIeLH7QeBOPuU4wdbISn3TP37LxJFtHAlzk9pZGo9sZKUAMG37Ilg5pSs9dAKYT2IqRbhj+H23TazRMejwqM+kzYGMPn/Xpfm/dg7pxTjBnr6g4jbC0cZEq9BgYr5verx+cpWJorHmqB//snNBp+H7X6ZDAWTQHtyn8PESjkQ2TesQflHJc95xYEYdnIytddTTC10zrxb//EjeOAmX37GP2yKwAoANUC0+fET3jQp9RBdkUUK8QI5mi17CJVopfkYmA+WWFXgz+RQCIJUrEP0nO8xKWOTjNUTpY6tLEMC1MdkIJItDuwtL66CS/JAH9OPf8jV5urp0uGumL6ehQlauwtWtxtlhQ/77MDiBpR2nqRuFrfUI=
+
+    # AZURE_GIT_REMOTE
+    # eg. https://USERNAME:PASSWORD@FUNCTIONAPP.scm.azurewebsites.net/FUNCTIONAPP.git
+    - secret: ORJZeYcwbED/V8dOjQyl+527/JLQfkVOfFgPr1gGd4eud07GKYNkqZuhrdvpy9kwRsorvqHUE7eG5hBQYHB/6diOjzT6N2KWUNU/STO0Y5VxkDhSeX2Uq3CczW1s/5buLPUIvNvbfMFvPbRFUnOj/q+6LpCN/pgRVV+4YBSM+P/yfZZ4rotoQ1f4HGWnP2uRxYVJu+avS6qq06bTmEOhHpeDeLaO6sVXfE1+xVQ/Y8maQFDEnoM5timAr1FpNFAvyRAgOnBFtsPcVogwLJfVcs+P++E94AMEXuNBohK0aqw8jTWho9GkfmXKdJ4wZPMTrhLwKAca4upmV7aqNdE0nTNmCWRpjXWdo50fx4NwGMC7DZOH3vXHcsOiCq6fTlhOKzB6Y3TDucQOKvH1D1w2JX84PohOdI5SQ+cXUjGkLOvSV1bLdP1+f+jUIUXqgIuJWe4HvrGFIX5ezRza0Lfl/vO5yyhiaQfZAktLD8m5oaUfG8PnZxymGjpTpDptW+xNK+d5xD16DskcfQOg7N40r7jNoktvyqS0PfXSoui9D34eZV0CWWdjIRpa2CR8V94mQu+MG/gyRv+F93NBjgkR/3T1GSYD0t8Hgas19aZvCeAKqfaL+rSnGjIagpArR9jr9KpvzEzdV+o6Qk06FE+bz9K4i7ZUKiZB4+KthAvlumE=
+
+install:
+
+  # Install Terraform.
+  - curl --location https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip > terraform.zip
+  - unzip terraform.zip
+
+script:
+
+  # Check that Terraform config files are formatted correctly and that they validate.
+  - ./terraform fmt -check
+  - ./terraform init
+  - ./terraform validate
+
+  # Check that the state is up-to-date - i.e. that no changes have been pushed without being applied.
+  # We only care about the exit code here, and don't want to expose any potentially sensitive data,
+  # so we also redirect the output.
+  - ./terraform plan -detailed-exitcode > /dev/null
+
+  # Lint custom shell scripts.
+  - shellcheck *.sh
+
+  # Lint all PHP files; exit if any fail.
+  # TODO: Is there an easy way to exit with 1 without terminating the build immediately?
+  - while read -r file; do
+      php -l "${file}" || travis_terminate 1
+    done <<< "$(find . -type d \( -name '.git' \) -prune -o -type f -name '*.php' -print)"
+
+deploy:
+  - provider: script
+    script: ./deploy.sh
+    on:
+      branch: master
+
+notifications:
+  email: false
+  webhooks:
+    urls: https://api.tm.id.au/v2/travis/jobStatus
+  slack:
+    on_start: always
+    rooms:
+      - secure: SE795zVVMsLFdrdeZ/pvfqu7U3b7H8++PHAwnCGZX6UvvlIWaKnzPQqAFX6wzHZts4aMxtE6y3f8gE6T1bSLC+T6+K5hQ4hRRh33IehMPzLDl1XeL+gtf5h/AXep/9TztS4gzmAfCp/HFicgs0UZg+7rCPcmTayhPrXK8N5Q16oz1+EetdtPOt5Yc17zI+GoY5Q8dcQl6t/ygstGPjTQ/f7T5c3REQdIkWn0mxRjzxUMJ3HBtqmpxLmNipZnwqfFPPENEV3gc4yAUTP+meiBD3J3KWoEqbsChSAkF3DQ8+RIIP8TrtAUFxlNjxgvNCaMIrwHbW95bl+xWWKxG30n+zvBMrrOvG7/C/laftfK/Bzg9YSUDQF4NKi3aYvHwVclyM9vfUroPuYxtsemriEzgJSqeDQZrFnYw20AiVcA6CNwkJeX7YC6gPfYZaIJWO3e2bEqI1GfU9i5R+9N50g+OaWJGQ2+tkT2ZyrCfPr7c28/sFDE4dkpt/J46JZxRtAdM1Gg7VrGaNJ+xoYIk6yVONLjIA1GnnGSP2NYe2JYGh4FK6Rp1xps0ZLlDKcTMGGAyt7XhQi2/66cGU6qAWpDqguRz55uIdZm5oaKWbrjLgzvYwsCWjVAUQO1n9EF0YqABrYsFcjYEckLzaBQY+Julg3O3c+ysjNAOV/L/E4fKro=
