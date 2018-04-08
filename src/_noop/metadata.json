@@ -1,0 +1,9 @@
+{
+  "defaultFunctionName": "noop",
+  "description": "No-op function, useful for calling regularly to keep the function app warm.",
+  "name": "HTTP GET",
+  "language": "PHP",
+  "trigger": "HttpTrigger",
+  "categoryStyle": "http",
+  "enabledInTryMode": true
+}
