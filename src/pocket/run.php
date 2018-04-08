@@ -43,4 +43,4 @@ $main_menu = (
 
 );
 
-echo $main_menu;
+fwrite( STDOUT, $main_menu );
