@@ -9,10 +9,11 @@
 
 /**
  * Configure the Azure Provider, with version constraints.
- * Credentials are handled by the Azure CLI (az login).
+ * Credentials are handled by the Azure CLI (az login) or via a Service Principal.
  *
  * @see https://www.terraform.io/docs/providers/azurerm/index.html
  * @see https://www.terraform.io/docs/configuration/providers.html#provider-versions
+ * @see https://www.terraform.io/docs/providers/azurerm/authenticating_via_service_principal.html
  */
 provider "azurerm" {
   version = "~> 1.3"
