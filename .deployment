@@ -1,7 +1,0 @@
-rem Move functions for deployment (so we can keep them in the src/ folder in the repo).
-rem
-rem @see https://stackoverflow.com/a/40532400/1982136
-
-@echo off
-echo Copying functions for deployment...
-xcopy "%DEPLOYMENT_SOURCE%\src" %DEPLOYMENT_TARGET% /Y /S
