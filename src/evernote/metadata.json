@@ -1,6 +1,6 @@
 {
-  "defaultFunctionName": "pocket",
-  "description": "Save, retrieve and manage articles in Pocket",
+  "defaultFunctionName": "evernote",
+  "description": "Manage and search through your Evernote notes.",
   "name": "HTTP POST",
   "language": "PHP",
   "trigger": "HttpTrigger",

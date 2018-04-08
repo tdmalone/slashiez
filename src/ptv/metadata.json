@@ -1,0 +1,9 @@
+{
+  "defaultFunctionName": "ptv",
+  "description": "Get disruption info as well as the next 5 trains, trams or buses from any stop.",
+  "name": "HTTP POST",
+  "language": "PHP",
+  "trigger": "HttpTrigger",
+  "categoryStyle": "http",
+  "enabledInTryMode": true
+}

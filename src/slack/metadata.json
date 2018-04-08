@@ -1,0 +1,9 @@
+{
+  "defaultFunctionName": "slack",
+  "description": "Provides Slack related tools, including searching through the entire conversation archives.",
+  "name": "HTTP POST",
+  "language": "PHP",
+  "trigger": "HttpTrigger",
+  "categoryStyle": "http",
+  "enabledInTryMode": true
+}

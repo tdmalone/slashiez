@@ -1,6 +1,6 @@
 {
-  "defaultFunctionName": "pocket",
-  "description": "Save, retrieve and manage articles in Pocket",
+  "defaultFunctionName": "dropbox",
+  "description": "Perform minor maintenance tasks on your Dropbox account",
   "name": "HTTP POST",
   "language": "PHP",
   "trigger": "HttpTrigger",

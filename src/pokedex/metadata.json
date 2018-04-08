@@ -1,6 +1,6 @@
 {
-  "defaultFunctionName": "pocket",
-  "description": "Save, retrieve and manage articles in Pocket",
+  "defaultFunctionName": "pokedex",
+  "description": "Retrieve information on hundreds of Pokemon.",
   "name": "HTTP POST",
   "language": "PHP",
   "trigger": "HttpTrigger",

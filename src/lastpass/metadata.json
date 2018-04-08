@@ -1,6 +1,6 @@
 {
-  "defaultFunctionName": "pocket",
-  "description": "Save, retrieve and manage articles in Pocket",
+  "defaultFunctionName": "lastpass",
+  "description": "Tools to manage passwords stored in LastPass.",
   "name": "HTTP POST",
   "language": "PHP",
   "trigger": "HttpTrigger",
