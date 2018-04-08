@@ -1,6 +1,7 @@
 <?php
 /**
- *
+ * Slashies function for /pocket.
+ * Provides various tools for integrating with a Pocket account.
  *
  * @see https://github.com/Azure/azure-functions-templates/tree/dev/Functions.Templates/Templates
  * @see https://github.com/Azure-Samples/functions-quickstart
