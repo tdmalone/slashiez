@@ -44,7 +44,7 @@ script:
   # Lint all PHP files; exit if any fail.
   # TODO: Is there an easy way to exit with 1 without terminating the build immediately?
   - while read -r file; do
-      php -l "${file}" || travis_terminate 1
+      php -l "${file}" || travis_terminate 1;
     done <<< "$(find . -type d \( -name '.git' \) -prune -o -type f -name '*.php' -print)"
 
 deploy:
