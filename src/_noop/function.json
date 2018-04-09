@@ -1,6 +1,12 @@
 {
   "bindings": [
     {
+      "schedule": "0 */15 * * * *",
+      "name": "noopWarmer",
+      "type": "timerTrigger",
+      "direction": "in"
+    },
+    {
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
