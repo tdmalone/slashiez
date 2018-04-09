@@ -7,6 +7,8 @@
  * @see https://github.com/Azure-Samples/functions-quickstart
  */
 
+require( '../init.php' );
+
 $main_menu = (
 
   '*Welcome to <https://getpocket.com|Pocket> on Slack!* :smile_cat:' . "\n" .
