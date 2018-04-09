@@ -25,7 +25,7 @@ trap finish EXIT
 echo Removing current files...
 (
   cd .deployment
-  git rm -rf . > /dev/null
+  git rm -rf . > /dev/null || echo The repository appears to be empty.
   git clean --force -xd
 )
 
@@ -37,6 +37,6 @@ echo
 (
   cd .deployment
   git add .
-  git commit -m "Deployment from ${TRAVIS_BRANCH:-"unknown branch"} (${TRAVIS_COMMIT_RANGE:-"unknown commit range"})" || echo && echo There is nothing to deploy.
+  git commit -m "Deployment from ${TRAVIS_BRANCH:-"unknown branch"} (${TRAVIS_COMMIT_RANGE:-"unknown commit range"})" || ( echo && echo There is nothing to deploy. )
   git push
 )
